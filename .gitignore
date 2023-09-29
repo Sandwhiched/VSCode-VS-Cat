@@ -1,0 +1,8 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+vsc-extension-quickstart.md
+package-prod.json
+package-devel.json

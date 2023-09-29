@@ -1,0 +1,51 @@
+{
+  "name": "vs-cat",
+  "displayName": "VS Cat",
+  "description": "Cat integration for... VS Code????",
+  "version": "1.0.2",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "publisher": "SystemTomcat",
+  "license": "MIT",
+  "icon": "vscat.png",
+  "repository": {
+    "url": "https://github.com/systemtomcat/vscode-vs-cat"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vs-cat.meow",
+        "title": "VS Cat: Meow"
+      },
+      {
+        "command": "vs-cat.feed",
+        "title": "VS Cat: Feed"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "spincycle": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
